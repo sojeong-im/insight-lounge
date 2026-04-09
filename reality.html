@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="인사이트 라운지 Reality - 수면 아래의 위기, 청년들이 마주한 정체성의 현실과 방향성 상실을 데이터로 진단합니다.">
+    <meta name="keywords" content="인사이트 라운지, 청년 우울, 2030 현실, 정체성 혼란, 심리적 위기, 멘토링 필요성">
+    <meta name="naver-site-verification" content="f2592b1bfebbf820ecc079fc606e360e97b5eca0" />
+    
+    <!-- Open Graph for Naver / Facebook / Kakao -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Reality | 인사이트 라운지">
+    <meta property="og:description" content="수면 아래의 위기: 우리가 마주한 정체성의 현실을 진단합니다.">
+    <meta property="og:site_name" content="인사이트 라운지">
+    
+    <title>Reality | 인사이트 라운지</title>
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .reality-page-hero {
+            position: relative;
+            padding: calc(var(--header-height) + 6rem) 0 4rem;
+            background-color: #f4f6fa;
+            text-align: center;
+        }
+
+        .reality-hero-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% -20%, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+            z-index: 1;
+        }
+
+        .reality-page-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .reality-typo-main {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            letter-spacing: -0.04em;
+            color: #111827;
+            margin-bottom: 1.5rem;
+        }
+
+        .reality-typo-sub {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .stats-container {
+            padding: 5rem 0;
+            background-color: #ffffff;
+        }
+
+        .extended-stat-card {
+            background: #ffffff;
+            padding: 3rem 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+            border: 1px solid rgba(0,0,0,0.03);
+            text-align: left;
+            transition: var(--transition-base);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .extended-stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            border-color: rgba(99, 102, 241, 0.2);
+        }
+
+        .stat-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--color-accent);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            width: fit-content;
+        }
+
+        .extended-stat-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #111827;
+            margin-bottom: 1rem;
+        }
+
+        .extended-stat-data {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: var(--color-accent);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .extended-stat-desc {
+            color: #4b5563;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .reality-closing {
+            padding: 6rem 0;
+            background: #111827;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .reality-closing-box {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .closing-text-large {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+            word-break: keep-all;
+        }
+
+        .closing-text-body {
+            font-size: 1.15rem;
+            color: #9ca3af;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            word-break: keep-all;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">INSIGHT LOUNGE</span>
+            </a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="reality.html">Reality</a></li>
+                    <li><a href="index.html#solutions">Solutions</a></li>
+                    <li><a href="index.html#onepoint">ONE-POINT UP</a></li>
+                    <li><a href="index.html#stories">Reviews</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="index.html#apply" class="btn btn-primary btn-nav">프라이빗 세션 예약</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="메뉴 열기">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Nav Menu -->
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reality.html">Reality</a></li>
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="index.html#onepoint">ONE-POINT UP</a></li>
+                <li><a href="index.html#stories">Reviews</a></li>
+                <li><a href="index.html#faq">FAQ</a></li>
+                <li><a href="index.html#apply" class="mobile-nav-cta">프라이빗 세션 예약하기</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Reality Hero Section -->
+        <section class="reality-page-hero">
+            <div class="reality-hero-bg"></div>
+            <div class="container reveal fade-up">
+                <span class="badge">현실 진단</span>
+                <h1 class="reality-typo-main">The Crisis Beneath the Surface.</h1>
+                <h2 class="reality-typo-sub">수면 아래의 위기: 우리가 마주한 정체성의 현실.</h2>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-container">
+            <div class="container">
+                <div class="crisis-stats-grid reveal fade-up">
+                    <div class="extended-stat-card">
+                        <span class="stat-badge">#심리적_위기</span>
+                        <div class="extended-stat-data">~30%</div>
+                        <h3 class="extended-stat-title">20대 우울 및 불안장애 증가율</h3>
+                        <p class="extended-stat-desc">최근 5년간 청년층의 우울감과 불안장애 진단 비율이 약 30% 급증했습니다. 이는 단순한 스트레스가 아닌, 본질적 자아 존중감이 위협받는 시대적 징후입니다.</p>
+                    </div>
+
+                    <div class="extended-stat-card">
+                        <span class="stat-badge">#방향성_상실</span>
+                        <div class="extended-stat-data">71%</div>
+                        <h3 class="extended-stat-title">"삶의 방향 없이 살아가고 있다"</h3>
+                        <p class="extended-stat-desc">성인 청년의 71%가 뚜렷한 가치관이나 지향점 없이 표류하고 있다고 응답했습니다. 정보는 넘쳐나지만, 정작 '나'를 향한 나침반은 고장 난 상태입니다.</p>
+                    </div>
+
+                    <div class="extended-stat-card">
+                        <span class="stat-badge">#대화의_부재</span>
+                        <div class="extended-stat-data">85%</div>
+                        <h3 class="extended-stat-title">"온전한 나를 논해본 적이 없다"</h3>
+                        <p class="extended-stat-desc">소셜 미디어를 통한 연결은 폭발적으로 늘어났으나, 정작 85%의 청년은 누군가와 진심으로 깊이 있게 자신의 기질과 내면에 대해 대화해본 적이 거의 없다고 말합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Closing Message Section -->
+        <section class="reality-closing">
+            <div class="container reveal fade-up">
+                <div class="reality-closing-box">
+                    <h2 class="closing-text-large">
+                        입시에서 취업으로 이어지는 무한 경쟁 속에서,<br>
+                        "나는 누구인가?"를 질문할 시간은 늘 부족했습니다.
+                    </h2>
+                    <p class="closing-text-body">
+                        목표만 바라보고 앞만 보며 달려오다 어느 순간 찾아오는 무기력과 번아웃.<br>
+                        이것은 당신이 부족해서가 아니라, 단 한 번도 '자신의 본질적 기질'을 들여다볼 수 있는<br>전문적이고 안전한 환경이 주어지지 않았기 때문입니다.<br><br>
+                        진정한 해답은 외부의 스펙이나 타인의 조언이 아닌, 내면의 심연 속에 있습니다.<br>
+                        이제 그 질문에 명확한 데이터로 답할 시간이 필요합니다.
+                    </p>
+                    <a href="index.html#apply" class="btn btn-gradient btn-large mt-2">프라이빗 세션 예약하기</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">INSIGHT LOUNGE</span>
+                    <p class="mt-2">내면의 깊이를 탐색하고, 성장의 변곡점을 설계하다.</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                        <li><a href="mailto:contact@insightlounge.org">기업 제휴 문의</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Insight Lounge Consulting. All rights reserved.</p>
+                <p class="trust-badge"><i class="fas fa-shield-alt"></i> 비영리 글로벌 스탠다드 기반</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
