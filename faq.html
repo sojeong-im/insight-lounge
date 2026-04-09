@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="인사이트 라운지 FAQ - 이용 대상, 프로그램 신청, 비용, 보안 등 자주 묻는 질문들에 대한 답변을 확인하세요.">
+    <meta name="keywords" content="인사이트 라운지 FAQ, 자주 묻는 질문, 상담 문의, 멘토링 비용, 기질 검사 문의, 개인정보 보호">
+    <meta name="naver-site-verification" content="f2592b1bfebbf820ecc079fc606e360e97b5eca0" />
+    <meta name="google-site-verification" content="Zrj7fpLaw62KcybEV8XXLyeLaUldQDhcMOmqIxU78yQ" />
+    <link rel="canonical" href="https://insightlounge.site/faq.html" />
+    
+    <!-- Open Graph for Naver / Facebook / Kakao -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="FAQ | 인사이트 라운지">
+    <meta property="og:description" content="인사이트 라운지에 대해 궁금한 모든 것, 여기서 확인하세요.">
+    <meta property="og:site_name" content="인사이트 라운지">
+    
+    <title>FAQ | 인사이트 라운지</title>
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .faq-hero {
+            position: relative;
+            padding: calc(var(--header-height) + 6rem) 0 4rem;
+            background-color: var(--color-bg-secondary);
+            text-align: center;
+        }
+
+        .faq-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #111827;
+            margin-bottom: 1rem;
+            letter-spacing: -0.04em;
+        }
+
+        .faq-subtitle {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            margin-bottom: 3rem;
+        }
+
+        .faq-content-wrap {
+            padding-bottom: 8rem;
+        }
+
+        .faq-category-section {
+            margin-bottom: 4rem;
+        }
+
+        .faq-category-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #111827;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .faq-category-title::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--gradient-primary);
+            border-radius: 4px;
+        }
+
+        .faq-page-accordion .faq-item {
+            margin-bottom: 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        .faq-page-accordion .faq-item:hover {
+            border-color: var(--color-accent);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.05);
+        }
+
+        .faq-page-accordion .faq-question {
+            width: 100%;
+            padding: 1.5rem 2rem;
+            background: none;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1f2937;
+            cursor: pointer;
+        }
+
+        .faq-page-accordion .faq-answer {
+            padding: 0 2rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: #f9fafb;
+        }
+
+        .faq-page-accordion .faq-item.active .faq-answer {
+            padding: 1.5rem 2rem;
+            max-height: 500px;
+            border-top: 1px solid #f3f4f6;
+        }
+
+        .faq-page-accordion .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+            color: var(--color-accent);
+        }
+
+        .faq-page-accordion .faq-question i {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer p {
+            line-height: 1.7;
+            color: #4b5563;
+            word-break: keep-all;
+        }
+
+        @media (max-width: 768px) {
+            .faq-title { font-size: 2.5rem; }
+            .faq-page-accordion .faq-question { padding: 1.25rem 1.5rem; font-size: 1rem; }
+            .faq-page-accordion .faq-item.active .faq-answer { padding: 1.25rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">INSIGHT LOUNGE</span>
+            </a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="reality.html">Reality</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="onepoint.html">ONE-POINT UP</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="index.html#apply" class="btn btn-primary btn-nav">프라이빗 세션 예약</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="메뉴 열기">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Nav Menu -->
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="reality.html">Reality</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="onepoint.html">ONE-POINT UP</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html#apply" class="mobile-nav-cta">프라이빗 세션 예약하기</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="faq-hero">
+            <div class="container reveal fade-up">
+                <h1 class="faq-title">Curiosity Lounge</h1>
+                <p class="faq-subtitle">인사이트 라운지에 대해 궁금한 점들을 모았습니다.</p>
+            </div>
+        </section>
+
+        <section class="faq-content-wrap bg-light">
+            <div class="container">
+                <div class="max-w-800 mx-auto">
+                    
+                    <!-- Category 1 -->
+                    <div class="faq-category-section reveal fade-up">
+                        <h2 class="faq-category-title">참여 및 대상 관련</h2>
+                        <div class="faq-page-accordion">
+                            <div class="faq-item">
+                                <button class="faq-question">특별한 고민이 없어도 신청할 수 있나요? <i class="fas fa-chevron-down"></i></button>
+                                <div class="faq-answer">
+                                    <p>네, 물론입니다. "내가 누군지 모르겠다", "그냥 요즘 마음이 허하다" 같은 막연한 느낌만 있어도 괜찮습니다. 거창한 고민이 있어야만 오는 곳이 아니라, 나를 더 잘 알고 싶은 분이라면 누구나 환영합니다.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">나이 제한이 있나요? <i class="fas fa-chevron-down"></i></button>
+                                <div class="faq-answer">
+                                    <p>인사이트 라운지는 주로 20대와 30대 청년층을 대상으로 프로그램을 기획하고 있습니다. 하지만 삶의 방향을 찾고 싶은 열정이 있는 분이라면 나이와 상관없이 문은 열려 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">직장인이라 주말이나 저녁 시간만 가능한데 괜찮을까요? <i class="fas fa-chevron-down"></i></button>
+                                <div class="faq-answer">
+                                    <p>네, 직장인분들을 위해 평일 저녁 시간대와 주말 상담 세션도 운영하고 있습니다. 신청서 작성 시 선호하시는 시간대를 1~3순위까지 적어주시면 최대한 조율해 드립니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="faq-category-section reveal fade-up">
+                        <h2 class="faq-category-title">프로그램 및 비용 관련</h2>
+                        <div class="faq-page-accordion">
+                            <div class="faq-item">
+                                <button class="faq-question">정말 무료인가요? 나중에 유료 결제를 유도하나요? <i class="fas fa-chevron-down"></i></button>
+                                <div class="faq-answer">
+                                    <p>인사이트 라운지는 청년들의 성장을 돕는 비영리 프로젝트 단체입니다. '원포인트 업' 같은 핵심 프로그램은 기본적으로 무료 혹은 자발적 후원제로 운영됩니다. 유료 전환을 강요하지 않으니 안심하고 참여하세요.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">1:1 상담은 몇 번이나 진행되나요? <i class="fas fa-chevron-down"></i></button>
+                                <div class="faq-answer">
+                                    <p>대표 프로그램인 '원포인트 업'은 총 3회기(성향 탐색 - 무의식 분석 - 실천 전략)로 구성되어 있습니다. 이후 지속적인 관리가 필요한 경우 별도의 멘토링 프로그램으로 연계도 가능합니다.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">워크숍이나 강연은 매번 주제가 다른가요? <i class="fas fa-chevron-down"></i></button>
+                                <div class="faq-answer">
+                                    <p>네. 매달 예술, 창업, 심리학 등 다양한 분야의 전문가를 초빙하여 새로운 관점의 인사이트를 공유합니다. 공지사항이나 SNS를 통해 매달 업데이트되는 주제를 확인해 보세요.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="faq-category-section reveal fade-up">
+                        <h2 class="faq-category-title">보안 및 기타 사항 관련</h2>
+                        <div class="faq-page-accordion">
+                            <div class="faq-item">
+                                <button class="faq-question">제가 말한 고민이 밖으로 새어 나갈까 봐 걱정돼요. <i class="fas fa-chevron-down"></i></button>
+                                <div class="faq-answer">
+                                    <p>모든 상담은 전문 상담 윤리 규정에 따라 철저히 비밀이 보장됩니다. 상담 기록은 본인의 동의 없이 외부로 절대 유출되지 않으며, 프로젝트 종료 후 관련 법령에 따라 안전하게 파기됩니다.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">검사 결과지(KPT, LMT 등)를 파일로 받을 수 있나요? <i class="fas fa-chevron-down"></i></button>
+                                <div class="faq-answer">
+                                    <p>네, 3회기 상담이 모두 끝난 후 본인의 성향과 상담 내용이 요약된 리포트를 제공해 드립니다. 언제든 다시 꺼내 보며 나침반으로 활용하실 수 있습니다.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <button class="faq-question">신청 후 노쇼(No-Show)하면 어떻게 되나요? <i class="fas fa-chevron-down"></i></button>
+                                <div class="faq-answer">
+                                    <p>한정된 인원에게 무료로 제공되는 기회인 만큼, 노쇼 발생 시 다른 대기자분들이 기회를 잃게 됩니다. 부득이한 사정으로 참석이 어려우실 경우 최소 3일 전에는 미리 연락 주시는 매너를 부탁드립니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-padding bg-white">
+            <div class="container text-center reveal fade-up">
+                <p class="mb-4 color-text-secondary">해결되지 않은 궁금증이 있으신가요?</p>
+                <a href="mailto:contact@insightlounge.site" class="btn btn-glass btn-large">이메일 문의하기</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">INSIGHT LOUNGE</span>
+                    <p class="mt-2">내면의 깊이를 탐색하고, 성장의 변곡점을 설계하다.</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                        <li><a href="mailto:contact@insightlounge.org">기업 제휴 문의</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Insight Lounge Consulting. All rights reserved.</p>
+                <p class="trust-badge"><i class="fas fa-shield-alt"></i> 비영리 글로벌 스탠다드 기반</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
