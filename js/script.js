@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.style.opacity = "0.7";
             
             setTimeout(() => {
-                alert('꿈다리 연수소 컨설팅 신청이 완료되었습니다. 담당 매니저가 곧 연락드리겠습니다.');
+                alert('삶의 다리 연구소 컨설팅 신청이 완료되었습니다. 담당 매니저가 곧 연락드리겠습니다.');
                 applyForm.reset();
                 submitBtn.textContent = originalText;
                 submitBtn.style.opacity = "1";
