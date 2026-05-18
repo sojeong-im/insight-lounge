@@ -236,27 +236,42 @@
             border-left: 4px solid #4f46e5;
         }
 
+        @media (max-width: 1024px) {
+            .opu-title { font-size: 3.2rem; }
+            .opu-subtitle { font-size: 1.2rem; }
+        }
+
         @media (max-width: 768px) {
             .opu-step {
                 flex-direction: column;
-                gap: 1.5rem;
+                gap: 1.2rem;
             }
             .opu-roadmap::before {
-                left: 2.5rem;
                 display: none;
             }
             .opu-step-number {
-                width: 4rem;
-                height: 4rem;
-                font-size: 1.2rem;
-                margin-bottom: -2rem;
-                margin-left: 1.5rem;
+                width: 3.5rem;
+                height: 3.5rem;
+                font-size: 1.1rem;
+                margin-left: 0;
             }
             .opu-step-content {
-                padding: 2.5rem 1.5rem;
+                padding: 2rem 1.5rem;
             }
-            .opu-title { font-size: 2.8rem; }
-            .opu-step-header h3 { font-size: 1.6rem; }
+            .opu-step-content:hover {
+                transform: none; /* 모바일에서 hover 이동 비활성화 */
+            }
+            .opu-title { font-size: 2.6rem; }
+            .opu-subtitle { font-size: 1.05rem; }
+            .opu-step-header h3 { font-size: 1.5rem; }
+        }
+
+        @media (max-width: 480px) {
+            .opu-title { font-size: 2.1rem; }
+            .opu-subtitle { font-size: 0.97rem; }
+            .opu-step-header h3 { font-size: 1.3rem; }
+            .opu-step-content { padding: 1.5rem 1rem; }
+            .opu-effect { font-size: 0.95rem; padding: 1.2rem; }
         }
     </style>
 </head>

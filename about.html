@@ -77,6 +77,26 @@
         .about-desc-box p:last-child {
             margin-bottom: 0;
         }
+
+        @media (max-width: 1024px) {
+            .about-typo-main { font-size: 3rem; }
+            .about-typo-sub { font-size: 1.5rem; }
+            .about-page-hero { min-height: 70vh; }
+        }
+
+        @media (max-width: 768px) {
+            .about-typo-main { font-size: 2.4rem; }
+            .about-typo-sub { font-size: 1.2rem; margin-bottom: 2rem; }
+            .about-desc-box { padding: 2rem 1.5rem; }
+            .about-desc-box p { font-size: 1rem; }
+            .about-page-hero { min-height: auto; }
+        }
+
+        @media (max-width: 480px) {
+            .about-typo-main { font-size: 2rem; }
+            .about-typo-sub { font-size: 1.05rem; }
+            .about-desc-box { padding: 1.5rem 1rem; }
+        }
     </style>
 </head>
 <body>
