@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://insightlounge.site/sitemap.xml
+Sitemap: https://lifebridgelab.site/sitemap.xml
